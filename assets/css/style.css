@@ -77,8 +77,6 @@ header nav ul li a:hover {
     border-radius: 30px;
 }
 .hero p {
-    /* margin-bottom: 20px;
-    padding: 50px; */
     font-weight: bold;
     width: 35%;
     text-align: right;
@@ -89,3 +87,16 @@ header nav ul li a:hover {
 }
   
 
+/* MEDIA QUERY */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero div p{
+        width:100%;
+        text-align: center;
+    }
+  }
