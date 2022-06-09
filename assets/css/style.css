@@ -119,11 +119,13 @@ header nav ul li a:hover {
 }
 .work a{
     width: 40%;
+    width: 300px;
 }
 .work a img{
   margin: 50px auto;
   padding-bottom: 50px;
   width: 40%;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -168,15 +170,17 @@ header nav ul li a:hover {
     }
 
     .hero div p{
-        width:100%;
+        width:70%;
         text-align: center;
     }
     .section-title {
+        padding-right: 0;
         width: 100%;
         border-right: none;
         text-align: center;
     }
     .me-text p{
+        width:100%;
         text-align:center;
     }
   }
@@ -184,6 +188,9 @@ header nav ul li a:hover {
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
+    }
+    .hero div p{
+        width:90%;
     }
     .me {
         flex: 1 100%;
@@ -201,6 +208,9 @@ header nav ul li a:hover {
 @media screen and (max-width: 575px) {
     .section-title {
         width: 95%;
+    }
+    .hero div p{
+        width:100%;
     }
 }
 
