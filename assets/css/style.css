@@ -117,18 +117,24 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     font-size: 16px;
 }
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .work a{
     width: 40%;
     width: 300px;
+    margin: 50px auto;
 }
 .work a img{
-  margin: 50px auto;
+  margin:0;
   padding-bottom: 50px;
   width: 40%;
   width: 300px;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; */
   /* justify-content: space-between; */
 /*    width: 300px; */
 }
@@ -139,10 +145,10 @@ header nav ul li a:hover {
     color: white;
   }
 .bottom-right{
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  color: var(--secondary-color);
+    position: relative;
+    bottom: 70px;
+    right: -200px;
+    color: var(--secondary-color);
 }
 
 
