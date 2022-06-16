@@ -59,7 +59,6 @@ header nav ul li a:hover {
     color: var(--tertiary-color);
     border-radius: 5px;
 }
-/* Header End*/
 
 /* Hero */
 .hero {
@@ -86,6 +85,8 @@ header nav ul li a:hover {
     font-size: 20px;
     line-height: 1.2;
 }
+
+/*Section-title*/
 .section-title {
     font-size: 40px;
     border-right: 5px solid;
@@ -104,6 +105,8 @@ header nav ul li a:hover {
     text-align: right;
     width: 33.9%;
 }
+
+/*about-me, contact-me*/
 .me{
     margin: 50px auto;
     padding-bottom: 50px;
@@ -125,30 +128,34 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     font-size: 16px;
 }
+
+
+/*Work*/
 .work-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .work-container-single{
     display:flex;
+    margin-left: 50px;
+    margin-bottom: 11px;
 }
 .work-container-row{
-    display:flex;
+    display: flex;
     flex-direction: row;
-
+    margin-left: 50px;
 }
 .work{
     display:flex;
 }
+.work-img-separation{
+    margin-right:50px;
+}
 .work a{
-    width: 40%;
     width: 300px;
-    margin: 50px auto;
+    margin-top: 0;
 }
 .work-img img{
-    margin-left: 175px;
-    margin-right: -125px;
     width: 40%;
     width: 275px;
     height: 150px;
@@ -160,6 +167,7 @@ header nav ul li a:hover {
     height: 215px;
     border: 5px solid var(--tertiary-color);
 }
+
 .container {
     position: relative;
     text-align: center;
@@ -176,13 +184,13 @@ header nav ul li a:hover {
 .bottom-right-small{
     position: absolute;
     font-size: 20px;
-    bottom: 5px;
-    right: -122px;
+    bottom: 8px;
+    right: 0px;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
 }
 
-/* MEDIA QUERY for smaller desktop and smaller*/
+/* Media query for smaller desktop and smaller*/
 @media screen and (max-width: 980px) {
 
     header {
@@ -223,7 +231,7 @@ header nav ul li a:hover {
         width: 70%;
     }
   }
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* Media query for tablet and smaller */
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
@@ -262,7 +270,7 @@ header nav ul li a:hover {
     }
 }
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* Media query for mobile phones and smaller*/
 @media screen and (max-width: 575px) {
     .hero div p{
         width:90%;
