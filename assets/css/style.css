@@ -181,7 +181,7 @@ header nav ul li a:hover {
     color: var(--primary-color);
     background-color: var(--tertiary-color);
 }
-.bottom-right-small{
+.bottom-right-small-left,.bottom-right-small-right{
     position: absolute;
     font-size: 20px;
     bottom: 8px;
@@ -192,7 +192,6 @@ header nav ul li a:hover {
 
 /* Media query for smaller desktop and smaller*/
 @media screen and (max-width: 980px) {
-
     header {
       padding-bottom: 0;
       justify-content: center;
@@ -217,18 +216,35 @@ header nav ul li a:hover {
         width:70%;
         text-align: center;
     }
-    .section-title, .section-title-work{
+    .section-title{
         padding-right: 0;
         width: 100%;
         border-right: none;
         text-align: center;
+    }
+    .section-title-work{
+        padding-right: 0;
+        padding-bottom: 5px;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+    .me-text{
+        padding-left: 0px;
     }
     .me-text p{
         width:100%;
         text-align:center;
     }
     .work-container{
-        width: 70%;
+        align-items: center;
+        width:95%
+    }
+    .work-container-single{
+        margin-left:-250px;
+    }
+    .work{
+        display: block;
     }
   }
 /* Media query for tablet and smaller */
@@ -242,31 +258,37 @@ header nav ul li a:hover {
     .me {
         text-align: center;
     }
-
-    .me-text {
-        text-align: center;
-        justify-content: center; 
+    .work a{
+        margin-top: 13px;
+        margin-bottom: 0;
+    }
+    .work-container{
+        width: 50%;
+    }
+    .work-container-single{
+        margin-bottom: -14px;
+        margin-left: 50px;
+    }
+    .work-container-row{
+        flex-direction: column;
+        margin-left: 400px;
     }
     .first-work-img img{
         margin-left: 162px;
         width: 275px;
         height: 150px;
     }
-    .work-container-row{
-        flex-direction: column;
-        align-items: center;
-    }
-    .work-container{
-        width: 55%;
-    }
-    .work a{
-        margin-top: 13px;
-        margin-bottom: 0;
-    }
     .bottom-right-big{
         font-size: 20px;
         bottom: 4px;
         right: -137px;
+    }
+    .bottom-right-small-left{
+        bottom: 4px;
+    }
+    .bottom-right-small-right{
+        bottom: 4px;
+        right: 50px;
     }
 }
 
@@ -282,7 +304,13 @@ header nav ul li a:hover {
         margin: 0;
     }
     .work-container{
-        width: 105%;
+        width: 90%;
+    }
+    .work-container-single{
+        margin-left: 46px;
+    }
+    .work-container-row{
+        margin-left: 100px;
     }
     .bottom-right-big{
         right: 12px;
