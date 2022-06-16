@@ -103,13 +103,13 @@ header nav ul li a:hover {
     padding-right: 26px;
     padding-top: 10px;
     text-align: right;
-    width: 33.9%;
+    width: 34%;
 }
 
 /*about-me, contact-me*/
 .me{
     margin: 50px auto;
-    padding-bottom: 50px;
+    padding-top: 65px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
